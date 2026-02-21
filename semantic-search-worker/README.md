@@ -2,7 +2,7 @@
 
 Real-time semantic search using ML embeddings running at CDN edge. Search by meaning, not just keywords.
 
-## 🎯 Overview
+##  Overview
 
 This POC demonstrates **true ML inference at the edge** using Cloudflare Workers AI for semantic search:
 - **Text embeddings** generated at edge (BGE model)
@@ -11,7 +11,7 @@ This POC demonstrates **true ML inference at the edge** using Cloudflare Workers
 - **Global edge deployment** across 300+ locations
 - **Real production use case** (documentation search, support, e-commerce)
 
-## 📊 Demo Features
+##  Demo Features
 
 - **Semantic Search**: Find documents by meaning, not keywords
 - **ML-Powered**: Uses Cloudflare's BGE embedding model (768 dimensions)
@@ -19,7 +19,7 @@ This POC demonstrates **true ML inference at the edge** using Cloudflare Workers
 - **Real-time Processing**: <150ms including embedding generation
 - **Interactive UI**: Live demo with example queries
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -57,7 +57,7 @@ npm run deploy
 
 Your worker will be deployed to: `https://semantic-search-edge.<your-subdomain>.workers.dev`
 
-## 🔧 Configuration
+##  Configuration
 
 ### Enable Workers AI (REQUIRED)
 
@@ -81,7 +81,7 @@ workers_dev = true
 
 Find your account ID at: https://dash.cloudflare.com → Workers & Pages
 
-## 📡 API Usage
+##  API Usage
 
 ### Endpoint: `/api/search`
 
@@ -134,7 +134,7 @@ curl -X POST https://your-worker.workers.dev/api/search \
 }
 ```
 
-## 🧪 Testing
+##  Testing
 
 Run the comprehensive test suite:
 
@@ -148,17 +148,7 @@ WORKER_URL=http://localhost:8787 npm test
 WORKER_URL=https://your-worker.workers.dev npm test
 ```
 
-The test suite includes 8 scenarios:
-- ✅ Account access issues
-- ✅ Payment updates
-- ✅ Mobile app queries
-- ✅ Security setup
-- ✅ API usage questions
-- ✅ Team management
-- ✅ Data export
-- ✅ Subscription management
-
-## 📈 Performance Metrics
+##  Performance Metrics
 
 Based on production testing with Workers AI:
 
@@ -183,7 +173,7 @@ Cloudflare Workers AI pricing:
 - Google Vertex AI: $0.025 per 1K requests ≈ $2,500/month
 - Self-hosted vector DB: $200-500/month (servers + maintenance)
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 User Query
@@ -208,7 +198,7 @@ Edge Server (Closest Location)
         Total: 50-150ms
 ```
 
-## 🔍 How It Works
+##  How It Works
 
 ### 1. Document Embedding (Pre-computed)
 
@@ -249,7 +239,7 @@ const results = documents.map(doc => ({
 results.sort((a, b) => b.similarity - a.similarity);
 ```
 
-## 🎨 Demo Page
+##  Demo Page
 
 Visit the root URL to see the interactive demo:
 
@@ -264,7 +254,7 @@ Features:
 - Performance metrics display
 - Category filtering
 
-## 💡 Why Semantic Search vs Keywords?
+##  Why Semantic Search vs Keywords?
 
 ### Keyword Search Example
 
@@ -283,7 +273,7 @@ Features:
 
 **Result:** Better results even without exact keyword matches!
 
-## 🔐 Production Considerations
+##  Production Considerations
 
 ### Scaling Document Embeddings
 
@@ -325,7 +315,7 @@ const keywordScore = keywordMatch(query, doc) / 100;
 const finalScore = (semanticScore * 0.7) + (keywordScore * 0.3);
 ```
 
-## 🚧 Production Enhancements
+##  Production Enhancements
 
 For production deployment:
 
@@ -338,22 +328,22 @@ For production deployment:
 - [ ] **A/B testing** (semantic vs keyword effectiveness)
 - [ ] **Feedback loop** (learn from user clicks)
 
-## 📚 Use Cases
+##  Use Cases
 
 Perfect for:
-- ✅ Documentation search
-- ✅ Customer support knowledge base
-- ✅ E-commerce product search
-- ✅ FAQ systems
-- ✅ Internal wiki search
-- ✅ Content recommendation
+-  Documentation search
+-  Customer support knowledge base
+-  E-commerce product search
+-  FAQ systems
+-  Internal wiki search
+-  Content recommendation
 
 Not ideal for:
-- ❌ Very large datasets (>100K docs) - use Vectorize
-- ❌ Real-time document updates (embedding generation is slow)
-- ❌ Exact match requirements (use keyword search)
+-  Very large datasets (>100K docs) - use Vectorize
+-  Real-time document updates (embedding generation is slow)
+-  Exact match requirements (use keyword search)
 
-## 🤝 Comparison: Edge vs Cloud
+##  Comparison: Edge vs Cloud
 
 | Aspect | Edge (This POC) | Cloud Vector DB |
 |--------|-----------------|-----------------|
@@ -377,11 +367,11 @@ Not ideal for:
 - Low latency critical
 - Minimal ops overhead
 
-## 📄 License
+##  License
 
 MIT
 
-## 💡 Production Examples
+##  Production Examples
 
 Companies using semantic search at edge:
 

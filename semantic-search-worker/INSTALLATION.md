@@ -5,9 +5,9 @@ Step-by-step guide to deploy semantic search at the edge.
 ## Prerequisites
 
 Before starting, you need:
-- ✅ Node.js 18+ installed
-- ✅ Cloudflare account created
-- ✅ Account ID ready
+-  Node.js 18+ installed
+-  Cloudflare account created
+-  Account ID ready
 
 **If you haven't done these:** See the bot-detection-worker/DETAILED_INSTALLATION.md guide first - it covers these steps in detail.
 
@@ -156,4 +156,4 @@ After deployment, verify:
 
 ---
 
-**You're ready! Semantic search is now running at the edge globally! 🚀**
+**You're ready! Semantic search is now running at the edge globally! **
