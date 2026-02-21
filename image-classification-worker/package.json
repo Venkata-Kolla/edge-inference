@@ -1,0 +1,27 @@
+{
+  "name": "image-classification-edge",
+  "version": "1.0.0",
+  "description": "Image classification and content moderation using ML at CDN edge",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+  "keywords": [
+    "cloudflare",
+    "workers",
+    "edge-computing",
+    "image-classification",
+    "computer-vision",
+    "content-moderation",
+    "machine-learning",
+    "ai",
+    "resnet"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.22.0"
+  }
+}

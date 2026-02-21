@@ -1,0 +1,34 @@
+name = "edge-bot-detection"
+main = "src/index.js"
+compatibility_date = "2024-01-10"
+compatibility_flags = ["nodejs_compat"]
+
+# Account details (replace with your own)
+# account_id = "your-account-id"
+# workers_dev = true
+
+# Optional: Enable Workers AI for ML-enhanced scoring
+# [ai]
+# binding = "AI"
+
+# Environment variables (if needed)
+# [vars]
+# ENVIRONMENT = "production"
+
+# KV namespace for rate limiting (optional future enhancement)
+# [[kv_namespaces]]
+# binding = "RATE_LIMIT"
+# id = "your-kv-namespace-id"
+
+# Durable Objects for advanced rate limiting (optional)
+# [[migrations]]
+# tag = "v1"
+# new_classes = ["RateLimiter"]
+
+# Route configuration (uncomment and modify for production)
+# routes = [
+#   { pattern = "botcheck.yourdomain.com/*", zone_name = "yourdomain.com" }
+# ]
+
+[build]
+command = ""

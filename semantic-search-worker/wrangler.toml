@@ -1,0 +1,24 @@
+name = "semantic-search-edge"
+main = "src/index.js"
+compatibility_date = "2024-01-10"
+compatibility_flags = ["nodejs_compat"]
+
+# Account details (replace with your own)
+# account_id = "your-account-id"
+# workers_dev = true
+
+# Workers AI binding - REQUIRED for semantic search
+[ai]
+binding = "AI"
+
+# Environment variables (optional)
+# [vars]
+# ENVIRONMENT = "production"
+
+# Route configuration (uncomment for custom domain)
+# routes = [
+#   { pattern = "search.yourdomain.com/*", zone_name = "yourdomain.com" }
+# ]
+
+[build]
+command = ""

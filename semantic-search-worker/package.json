@@ -1,0 +1,26 @@
+{
+  "name": "semantic-search-edge",
+  "version": "1.0.0",
+  "description": "Semantic search using ML embeddings at CDN edge",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail",
+    "test": "node test/test-search.js"
+  },
+  "keywords": [
+    "cloudflare",
+    "workers",
+    "edge-computing",
+    "semantic-search",
+    "embeddings",
+    "machine-learning",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.22.0"
+  }
+}
