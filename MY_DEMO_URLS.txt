@@ -1,0 +1,9 @@
+# My Edge Inference Demo URLs
+
+POC 1 - Semantic Search:
+https://semantic-search-edge.kolla-gopi.workers.dev
+
+POC 2 - Image Classification:
+https://image-classification-edge.kolla-gopi.workers.dev
+
+Deployed on: Sat Feb 21 14:37:24 PST 2026
