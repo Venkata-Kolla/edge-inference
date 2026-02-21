@@ -247,7 +247,7 @@ async function generateEmbedding(text, env) {
     });
     
     // Response format: { shape: [1, 768], data: [...] }
-    return response.data;
+    return response.data[0] || response.data;
     
   } catch (error) {
     console.error('Embedding generation failed:', error);
