@@ -2,7 +2,7 @@
 
 Real-time image classification and content moderation using ResNet-50 ML model running at CDN edge.
 
-## 🎯 Overview
+##  Overview
 
 This POC demonstrates **true computer vision ML inference at the edge**:
 - **ResNet-50 model** for image classification (1000 object categories)
@@ -11,7 +11,7 @@ This POC demonstrates **true computer vision ML inference at the edge**:
 - **Global edge deployment** across 300+ locations
 - **Production use case** (user-generated content, uploads, safety)
 
-## 📊 What It Does
+##  What It Does
 
 ### Image Classification
 - Upload any image
@@ -25,7 +25,7 @@ This POC demonstrates **true computer vision ML inference at the edge**:
 - Returns safety levels: safe, sensitive, review, unsafe
 - Provides actionable recommendations (allow, flag, block)
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -44,7 +44,7 @@ npx wrangler login
 npm run deploy
 ```
 
-## 📡 API Endpoints
+##  API Endpoints
 
 ### 1. `/api/classify` - Image Classification
 
@@ -118,7 +118,7 @@ curl -X POST https://your-worker.workers.dev/api/analyze \
   -F "image=@image.jpg"
 ```
 
-## 🧪 Demo Page
+##  Demo Page
 
 Visit your deployed URL to use the interactive demo:
 ```
@@ -132,7 +132,7 @@ Features:
 - Safety badges and recommendations
 - Performance metrics
 
-## 📈 Performance
+##  Performance
 
 | Metric | Value |
 |--------|-------|
@@ -142,7 +142,7 @@ Features:
 | **Global Latency** | <400ms |
 | **Model Size** | ~25MB (hosted by Cloudflare) |
 
-## 🎨 Use Cases
+##  Use Cases
 
 ### Production Applications
 
@@ -164,7 +164,7 @@ Features:
 - Automatic alt-text
 - Image organization
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 Image Upload
@@ -190,7 +190,7 @@ Edge Server (Closest to User)
     Total: 150-300ms
 ```
 
-## 💡 How It Works
+##  How It Works
 
 ### ResNet-50 Model
 
@@ -224,7 +224,7 @@ Edge Server (Closest to User)
    - unsafe → block
 ```
 
-## 🔐 Production Considerations
+##  Production Considerations
 
 ### Scaling
 
@@ -277,7 +277,7 @@ function customModeration(predictions, userContext) {
 }
 ```
 
-## 📊 Cost Analysis
+##  Cost Analysis
 
 Cloudflare Workers AI pricing:
 - **Free Tier**: 10,000 neurons/day (~100 images)
@@ -292,7 +292,7 @@ Cloudflare Workers AI pricing:
 
 **Edge is 10-15x cheaper!**
 
-## 🚧 Enhancements
+##  Enhancements
 
 For production deployment:
 
@@ -305,7 +305,7 @@ For production deployment:
 - [ ] **Analytics** (track moderation stats)
 - [ ] **A/B testing** (model comparison)
 
-## 🤝 Comparison: Edge vs Cloud
+##  Comparison: Edge vs Cloud
 
 | Aspect | Edge (This POC) | Cloud Vision API |
 |--------|-----------------|------------------|
@@ -329,7 +329,7 @@ For production deployment:
 - Already using cloud infrastructure
 - Need advanced features (celebrity detection, etc.)
 
-## 📚 Available Models (Cloudflare Workers AI)
+##  Available Models (Cloudflare Workers AI)
 
 Other vision models you can use:
 
@@ -338,11 +338,11 @@ Other vision models you can use:
 - `@cf/unum/uform-gen2-qwen-500m` - Image captioning
 - More at: https://developers.cloudflare.com/workers-ai/models/
 
-## 📄 License
+##  License
 
 MIT
 
-## 💡 Real-World Examples
+##  Real-World Examples
 
 Companies using edge vision AI:
 

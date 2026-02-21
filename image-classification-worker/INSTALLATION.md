@@ -4,9 +4,9 @@ Quick setup guide for image classification and content moderation at the edge.
 
 ## Prerequisites
 
-- ✅ Node.js 18+ installed
-- ✅ Cloudflare account created
-- ✅ Account ID ready
+-  Node.js 18+ installed
+-  Cloudflare account created
+-  Account ID ready
 
 ## Installation Steps (10 minutes)
 
@@ -109,4 +109,4 @@ curl -X POST https://your-worker.workers.dev/api/classify \
 
 ---
 
-**You're ready! Computer vision ML is now running at the edge! 🚀**
+**You're ready! Computer vision ML is now running at the edge! **
